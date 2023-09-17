@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="splide.min.css">
-    <link rel="stylesheet" href="splide.min.js">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>Hugo Curriculo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="splide.min.css">
+  <link rel="stylesheet" href="splide.min.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+
+  <title>Hugo Curriculo</title>
 </head>
-<body style="background-color: #FFECDB;">
+
+<body>
   <header>
     <h2>Hugo <span>Machado</span></h2>
     <nav id="navBar">
@@ -27,162 +31,175 @@
       <i class="fa-solid fa-bars"></i>
     </div>
   </header>
-<div class="container">
-            <div class="history">
-                <div class="text-history">
-                    <h1>Seja bem-vindo(a)...</h1>
-                <p>Bem-vindo ao meu mundo de sabores e paixões! Meu nome é Hugo, e estou empolgado por você estar aqui para explorar meu portfólio. Com um ano de experiência como padeiro e passagens pelo McDonald's e uma fábrica de açaí, este portfólio é um vislumbre das minhas jornadas culinárias. Explore as seções seguintes e conheça minha história e meu trabalho. Espero que desfrute da visita e que estas páginas transmitam minha paixão pela gastronomia.
 
-                </p>
-                </div>
-                <img src="ASA 1.png" alt="img-1 teste">
+  <div class="container">
+
+    <div class="history">
+      <img src="ASA 1.png" alt="img-1 teste" id="fotoPortfolio">
+
+      <div class="text-history">
+        <h3>Olá! Me chamo</h3>
+        <h1><span>HUGO MACHADO</span> </h1>
+        <h4>Seja bem-vindo ao meu mundo de sabores e paixões!</h4>
+
+        <p>Tenho um ano de experiência como padeiro e passagens pelo McDonald's e uma fábrica de açaí, este portfólio é
+          um vislumbre da minha jornada culinária. </p>
+        <div id="botoes">
+
+          <a href="#container-especialidade"><button id="botaoVer"><i class="fa-solid fa-user"
+                style="color: #ffecdb;"></i>
+              VER EXPERIÊNCIAS</button></a>
+          <a href="#produtos"><button id="botaoProdutos"> <i class="fa-solid fa-suitcase" style="color: #f47145;"></i>
+              PORTFÓLIO</button></a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Especialidades-->
+    <div id="container-especialidade">
+
+      <div id="tit1">
+        <h1>Minhas Experiências </h1>
+      </div>
+
+      <div id="tracinho"></div>
+
+      <div class="especialidades">
+
+        <div class="card-especialidade">
+          <div id="caixa-imagem">
+            <img src="img/pao.png" alt="icone de pães">
+          </div>
+          <h3 id="ocupacao">PADEIRO</h3>
+          <!-- <div id="tracinho"></div> -->
+
+
+          <p id="data-experiencia"> <i class="fa-regular fa-calendar-days" style="color: #4a4a4a;"></i> 11/2022 -
+            08/2023</p>
+          <p id="descricao"> Preparação de Pão Doce, Pão de leite, Folhados, Pão de hamburguer</p>
+        </div>
+
+        <div class="card-especialidade">
+          <div id="caixa-imagem">
+            <img src="img/mcdonalds.png" alt="icone do logo do Mc Donalds">
+          </div>
+          <h3 id="ocupacao">ATENDENTE DE LANCHONETE</h3>
+          <!-- <div id="tracinho"></div> -->
+          <p id="data-experiencia"> <i class="fa-regular fa-calendar-days" style="color: #4a4a4a;"></i> 08/2022 -11/2022
+          </p>
+          <p id="descricao">Preparação de alimentos, Atendimento ao cliente, Reposição de estoque</p>
+        </div>
+
+        <div class="card-especialidade">
+          <div id="caixa-imagem">
+            <img src="img/acai.png" alt="icone de um açaí">
+          </div>
+          <h3 id="ocupacao">ALIMENTADOR DE LINHA DE PRODUÇÃO</h3>
+          <!-- <div id="tracinho"></div> -->
+          <p id="data-experiencia"> <i class="fa-regular fa-calendar-days" style="color: #4a4a4a;"></i> 08/2022 -11/2022
+          </p>
+          <p id="descricao"> Operador de máquina, Reposição de estoque, Limpeza do ambiente</p>
+        </div>
+
+      </div>
+    </div>
+
+  <!-- Cardapio  -->
+    <section id="produtos" class="cardapio">
+      <div>
+        <h1>Meus Trabalhos</h1>
+      </div>
+      <div id="tracinho2"></div>
+
+      <div id="caixinha">
+
+        <button id="botaoAnterior"><i class="fa-solid fa-caret-right fa-flip-horizontal"
+            style="color: #ff684a; font-size: 90px;"></i></button>
+
+        <div class="slider-container">
+
+          <div class="slider">
+            <div class="card">
+              <h2>Pão doce sla oq</h2>
+              <img src="../PannyPio/VideosViviana/1.gif" alt="Produto 1">
             </div>
-        <!--Especialidades-->
-            <div id="tit1"><h1>Experiências</h1></div>
-            <div class="especialidades">
-              <div class="spe1">
-                <img src="img/iconpao.png" alt="">
-                <h5 id="testeCor2">Padeiro</h5>
-                <p id="testeCor"> 17/11/2022 - 22/08/2023</p>
-                <p id="testeCor"> Realizava pão doce, Pão de leite, Folhados, Pão de hamburgue</p>
-              </div>
-              <div class="spe2">
-                <img src="img/mcdonalds.png" alt="">
-                <h5 id="testeCor2">Atendente de Lanchonete</h5>
-                <p id="testeCor"> 09/08/2022 - 01/11/2022                </p>
-                <p id="testeCor">Preparação de alimentos, Atendimento ao cliente, Reposição de estoque</p>
-              </div><div class="spe3">
-                <img src="img/acai.png" alt="">
-                <h5  id="testeCor2">Alimentador de linha de produção</h5>
-                <p id="testeCor"> 09/08/2022 - 01/11/2022</p>
-                <p id="testeCor"> Operador de maquina, Reposição de estoque, Limpeza do ambiente</p>
-                
-              </div>
-            </div><!--especialidades-->
-          <!--Cardapio-->
-            <section id="produtos" class="cardapio">
-              <h1>Meus Trabalhos</h1>
-              <p>Venha conhecer alguns produtos que eu fiz</p>
-              <div class="produtos container flex-fill d-flex flex-column align-items-center justify-content-center gap-3">
-                <!--card-group-->
-                <div class="card-group row d-flex flex-column flex-md-row flex-wrap" >
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                    <img class="card-img-top" src="img/bolotradicional.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Bolos Tradicionais</h5>
-                      <p class="card-text">Um clássico saboroso, com textura fofa e cobertura irresistível, para saborear momentos especiais.</p>
-                      <p class="card-text"><small class="text-muted">Disponíveis todos os dias</small></p>
-                    </div><!--card-body-->
-                  </div>
 
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                    <img class="card-img-top" src="img/doces.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Doces Variados</h5>
-                      <p class="card-text"> Uma coleção gourmet de doces finos, cada um com um toque único de indulgência.</p>
-                      <p class="card-text"><small class="text-muted">Disponíveis todos os dias</small></p>
-                    </div><!--card-body-->
-                  </div>
+            <div class="card">
+              <h2>Pão doce sla oq</h2>
 
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                    <img class="card-img-top" src="img/salgas.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Pães Recheados</h5>
-                      <p class="card-text">Massa fresca e macia, recheada com combinações deliciosas, ideais para lanches ou refeições rápidas.</p>
-                      <p class="card-text"><small class="text-muted">Disponíveis todos os dias </small></p>
-                    </div><!--card-body-->
-                    </div>
+              <img src="../PannyPio/VideosViviana/2.gif" alt="Produto 2">
+            </div>
 
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                      <img class="card-img-top" src="img/Bolo2.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Bolos de Festa</h5>
-                        <p class="card-text">Bolos deslumbrantes, personalizados e saborosos, para celebrar ocasiões memoráveis com elegância.</p>
-                        <p class="card-text"><small class="text-muted">Disponíveis de sexta á domingo</small></p>
-                      </div><!--card-body-->
-                  </div>
-                </div>
-                <!--card-group-->
-                <div class="card-group row d-flex flex-column flex-md-row flex-wrap">
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                    <img class="card-img-top" src="img/salgados.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Salgados de Festa</h5>
-                      <p class="card-text">Uma seleção deliciosa de salgados gourmet, perfeitos para eventos festivos e encontros sociais.</p>
-                      <p class="card-text"><small class="text-muted">Disponíveis de sexta á domingo</small></p>
-                    </div><!--card-body-->
-                  </div>
+            <div class="card">
+              <h2>Pão doce sla oq</h2>
 
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                    <img class="card-img-top" src="img/tiramisu.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Tiramisu</h5>
-                      <p class="card-text">A sobremesa italiana clássica, camadas de biscoitos embebidos em café e creme mascarpone, uma tentação.</p>
-                      <p class="card-text"><small class="text-muted">Disponíveis todos os dias</small></p>
-                    </div><!--card-body-->
-                  </div>
+              <img src="../PannyPio/VideosViviana/3.gif" alt="Produto 3">
+            </div>
 
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                    <img class="card-img-top" src="img/pao1.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Pães Tradicionais</h5>
-                      <p class="card-text">Receitas ancestrais, aroma nostálgico, textura perfeita - a essência da panificação italiana.</p>
-                      <p class="card-text"><small class="text-muted">Disponíveis todos os dias</small></p>
-                    </div><!--card-body-->
-                    </div>
+            <div class="card">
+              <h2>Pão doce sla oq</h2>
 
-                  <!--card-->
-                  <div class="card col-12 col-md-6 col-lg-3 border border-black">
-                      <img class="card-img-top" src="img/cannoli.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Canollis Variados</h5>
-                        <p class="card-text">Casquinha crocante recheada com creme de ricota e frutas cristalizadas, uma experiência autêntica e única</p>
-                        <p class="card-text"><small class="text-muted">Disponíveis todos os dias</small></p>
-                      </div><!--card-body-->
-                  </div>
-                </div>
-              </div>
-              <!--produtos-->
-            </section><!--Cardapio-->
-              <script>
-                document.addEventListener( 'DOMContentLoaded', function() {
-                  var splide = new Splide( '.splide', {
-                    type   : 'loop',
-                    perPage: 3,
-                    focus  : 'center',
-                    } );
-                    splide.mount();
-                  } );
-              </script>
-</div><!--Container-->
-<footer>
-  <div class="pt1">
-    <h2>Hugo <span>Machado</span></h2>
-    <div class="ctt">
-      <h5>Contato:</h2>
-        <p id="testeCor">(81) 98624-1186</p>
-        <p id="testeCor">hugo.machado2001@gmail.com        </p>
-    </div><!--ctt-->
-    <div class="end">
-      <h5>Endereço:</h2>
-      <p id="testeCor"> Guaianazes - São Paulo – SP  (Zona Leste)</p>
-    </div><!--end-->
-    <div class="hf">
-      <h5>Informações adicionais</h2>
-      <p id="testeCor">22 Anos</p>
-      <p id="testeCor">Solteiro</p>
-    </div><!--end-->
-  </div><!--pt1-->
-</footer>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
-</html>
+              <img src="../PannyPio/VideosViviana/4.gif" alt="Produto 4">
+            </div>
+
+            <div class="card">
+              <h2>Pão doce sla oq</h2>
+
+              <img src="../PannyPio/VideosViviana/5.gif" alt="Produto 5">
+            </div>
+
+            <div class="card">
+              <h2>Pão doce sla oq</h2>
+
+              <img src="../PannyPio/VideosViviana/6.gif" alt="Produto 6">
+            </div>
+
+            <div class="card">
+              <h2>Pão doce sla oq</h2>
+
+              <img src="../PannyPio/VideosViviana/7.gif" alt="Produto 7">
+            </div>
+
+            <div class="card">
+              <h2>Pão doce sla oq ididi</h2>
+
+              <img src="../PannyPio/VideosViviana/8.gif" alt="Produto 8">
+            </div>
+
+          </div>
+        </div>
+        <button id="botaoProximo"><i class="fa-solid fa-caret-right"
+            style="color: #ff684a;  font-size: 90px;"></i></button>
+      </div>
+
+    </section>
+
+
+    <!-- ****************FOOTER************************************ -->
+    <footer>
+      <div class="pt1">
+        <h2>Hugo <span>Machado</span></h2>
+        <div class="ctt">
+          <h5>Contato</h2>
+            <p id="testeCor">(81) 98624-1186</p>
+            <p id="testeCor">hugo.machado2001@gmail.com </p>
+        </div><!--ctt-->
+        <div class="end">
+          <h5>Endereço</h2>
+            <p id="testeCor"> Guaianazes - São Paulo – SP (Zona Leste)</p>
+        </div><!--end-->
+        <div class="hf">
+          <h5>Informações adicionais</h2>
+            <p id="testeCor">22 Anos</p>
+            <p id="testeCor">Solteiro</p>
+        </div><!--end-->
+      </div><!--pt1-->
+    </footer>
+
+    
+  </body>
+  
+  </html>
+  <script src="script.js"></script>

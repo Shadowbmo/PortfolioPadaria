@@ -1,27 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Graduate&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Graduate', cursive;
+  /* font-family: 'Graduate', cursive; */
+  font-family: 'Roboto', sans-serif;
+
 }
 
 :root {
+  --cor-secundaria: #ff684a;
+  --cor-quartearia: #32312d;
+  --cor-primaria: #ffecdb;
+  --cor-tercearia: #f59f1f;
+/* 
   --cor-primaria: #ffecdb;
   --cor-secundaria: #eb4a12;
   --cor-tercearia: #f59f1f;
-  --cor-quartearia: #000000;
+  --cor-quartearia: #000000; */
 }
 
 body,
 html {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   scroll-behavior: smooth;
   justify-content: center;
-  background: #ffecdb;
-  border: 2px solid black;
+  background-color: var(--cor-primaria);
+  /* border: 2px solid black; */
 }
 
 ul {
@@ -31,44 +39,39 @@ ul {
 header {
   width: 100%;
   display: flex;
-  padding: 2%;
+  padding: 2% 5%;
   height: 80px;
-  border: 2px solid #000;
-  background: var(--cor-primaria);
+  border-bottom: 1px solid #000;
+  background: var(--cor-quartearia);
   justify-content: space-between;
   align-items: center;
 }
 header h2 {
   color: var(--cor-secundaria);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 header span {
-  color: black;
+  color: var(--cor-primaria);
   font-style: bold;
   text-shadow: none;
 }
 header button {
   background-color: var(--cor-secundaria);
   text-decoration: none;
-  color: white;
+  color: var(--cor-primaria);
   font-size: 16px;
   letter-spacing: 0.08em;
   padding: 10px;
-  box-shadow: 5px 5px 0px #000;
+  /* box-shadow: 5px 5px 0px #575757; */
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  
 }
 button:hover {
   background-color: var(--cor-tercearia);
 }
-.teste{
-  border-radius: 50% !important;
-}
-#testeCor{
-  color: #DFE0DF!important;
-}
-#testeCor2{
-  color: #FFF5ED !important;
-}
+
 #navBar {
   display: flex;
   align-items: center;
@@ -105,92 +108,259 @@ button:hover {
 .burger {
   display: none;
 }
-/*FIM DO HEADER*/
+
+/* **********************  APRESENTAÇÃO************************************** */
 .container {
-  max-width: 1280px;
   background-color: var(--cor-primaria);
-  border-right: 2px solid black;
-  border-left: 2px solid black;
 }
+
 .history {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
-  text-align: left;
-  padding: 40px;
-}
-.history h1 {
-  margin-bottom: 25px;
-  font-size: 50px;
-  color: var(--cor-secundaria);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.history img {
-  width: 380px;
-  margin-left: 30px;
+  justify-content: center;
+  padding: 7% 15%;
+  background-color: var(--cor-primaria);
+  /* background-image: url(img/background.jpg); */
 }
 
-/*FIM DA APRESENTAÇÂO*/
-#tit1 {
-  text-align: center;
-  color: var(--cor-secundaria);
-  margin-bottom: 10px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.especialidades {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  gap: 10px;
-  text-align: center;
-  padding: 30px;
-}
-.especialidades h5 {
+.history h3{
+  font-size: 25px;
   color: var(--cor-quartearia);
 }
-.especialidades img {
+
+.history h1 {
+  margin: 15px 0px 16px 0px;
+  font-size: 60px;
+  color: var(--cor-quartearia);
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  /* border-bottom: 2px solid var(--cor-quartearia) */
+}
+
+.history h1 span {
+  margin: 15px 0px 16px 0px;
+  font-size: 60px;
+  color: var(--cor-secundaria);
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+.history h4 {
+  margin-bottom: 16px;
+  font-style: oblique;
+  font-size: 22px;
+  color: var(--cor-quartearia);
+}
+
+.history p {
+  font-size: 18px;
+  margin-bottom: 22px;
+  color: var(--cor-quartearia);
+}
+
+#fotoPortfolio{
+  width: 420px;
+  margin-right: 50px;
+}
+
+.history #botaoVer{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+  color: var(--cor-primaria);
+  margin-right: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+}
+
+.history #botaoProdutos{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 200px;
+  padding: 9px;
+  border-radius: 15px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid var(--cor-secundaria);
+  color: var(--cor-secundaria);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.history #botaoVer:hover{
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+}
+
+
+.history #botaoProdutos:hover{
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  /* border: 2px solid var(--cor-secundaria); */
+}
+
+
+/* ********************** EXPERIENCIA************************************** */
+
+#container-especialidade{
+  padding: 80px 0px;
+  width: 100%;
+  background-color: var(--cor-quartearia);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tit1 {
+  text-align: center;
+  color: var(--cor-primaria);
+  margin-bottom: 16px;
+}
+
+.especialidades {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+  margin: 3% 8%;
+}
+
+.card-especialidade{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 30px;
+  background-color: #fae5ce;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--cor-quartearia);
+}
+
+.card-especialidade img {
   padding: 3px;
   width: 100px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+} 
+
+#tracinho{
+  width: 100px;
+  border-bottom: 4px solid var(--cor-secundaria);
+  margin-bottom: 10px;
 }
-.spe1,
-.spe3 {
-  padding: 5px;
-  background-color: var(--cor-secundaria);
-  border: 2px solid var(--cor-quartearia);
-  box-shadow: 7px 7px 0px -4px rgba(0, 0, 0, 0.75);
-}
-.spe2,
-.spe4 {
-  padding: 5px;
-  background-color: var(--cor-tercearia);
-  border: 2px solid var(--cor-quartearia);
-  box-shadow: 7px 7px 0px -4px rgba(0, 0, 0, 0.75);
-}
-/*FIM DAS ESPECIALIDADES*/
-.cardapio {
-  padding: 30px;
+
+#ocupacao{
+  font-weight: 600;
   text-align: center;
-  margin-top: 30px;
+  color: var(--cor-quartearia);
+  font-size: 18px;
+  margin-bottom: 16px;
 }
-.cardapio h1 {
-  color: var(--cor-secundaria);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+ #data-experiencia{
+  font-weight: 400;
+  color: var(--cor-quartearia);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 22px;
 }
-.card-group {
-  gap: 10px;
-  justify-content: center;
+
+ #descricao{
+  color: var(--cor-quartearia);
+  margin-bottom: 8px;
+  text-align: center;
 }
-.card img {
-  margin-top: 10px;
-  height: 150px;
+
+/* ********************** GALERIA DE VIDEOS************************************** */
+.cardapio{
+  padding: 80px 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.produtos {
+
+
+#caixinha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+
+}
+.cardapio h1{
+  margin: 10px 0px 15px 0px ;
+  text-align: center;
+  color: var(--cor-quartearia);
+  font-size: 32px;
+  /* width: 22px; */
+  text-align: center;
+}
+
+/* Estilize o slider container e as imagens */
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  max-width: 100%; 
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  border-radius: 5px;
+  /* margin: 10px; */
+  width: 320px;
+  /* height: 400px; */
+  overflow: hidden;
+
+}
+.slider .card{
+  background-color: var(--cor-quartearia);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px;
+  /* height: 600px; */
+}
+
+.slider .card h2{
+  padding: 15px;
+  text-align: center;
+   color: var(--cor-primaria);
+}
+
+#tracinho2{
+  width: 100px;
+  border-bottom: 4px solid var(--cor-secundaria);
+  margin-bottom: 50px;
+}
+/* Estilize os botões de navegação, se desejar */
+
+#botaoAnterior,
+#botaoProximo {
+  background: none;
   border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 20px; /* Espaçamento entre os botões */
 }
-/*FIM DO CARDAPIO*/
-.depo {
-  color: var(--cor-secundaria);
+
+/* .depo {
+  color: var(--cor-quartearia);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .carrossel {
@@ -255,7 +425,7 @@ button:hover {
   border: 2px solid black;
   align-items: center;
   justify-content: center;
-  box-shadow: 7px 7px 0px -4px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 7px 7px 0px -4px rgba(0, 0, 0, 0.75); */
 }
 .tit h2 {
   color: var(--cor-secundaria);
@@ -270,37 +440,44 @@ button:hover {
 }
 .cadastro button:hover {
   background-color: var(--cor-secundaria);
-}
-/*Fim do Cadastro*/
+} 
+
+/* *********************FOOTER *************************** */
 footer {
   width: 100%;
-  background-color: var(--cor-secundaria);
-  height: 150px;
+  background-color: var(--cor-quartearia);
+  /* height: 150px; */
   border: 2px solid var(--cor-quartearia);
   justify-content: space-between;
-  padding: 30px;
+  padding: 60px 30px;
 }
+
 footer h2 {
-  color: var(--cor-primaria);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: var(--cor-secundaria);
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 footer .pt1 {
   display: flex;
   justify-content: space-around;
 }
-footer .pt2 {
+footer span {
   text-align: center;
   color: var(--cor-primaria);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 footer h5 {
-  color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-size: 20px;
   text-align: center;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 16px;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 footer p {
-  color: var(--cor-quartearia);
+  color: var(--cor-primaria);
   max-width: 300px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 300;
   text-align: center;
 }
 footer .ctt,
@@ -327,10 +504,11 @@ footer .ctt,
     justify-content: center;
     margin: 0;
   }
-  .especialidades {
-    display: flex;
-    flex-direction: column;
+
+  .card-especialidade{
+    min-width: auto;
   }
+
   .carrossel {
     display: none;
   }
@@ -338,7 +516,7 @@ footer .ctt,
     width: 100%;
   }
   footer {
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -362,7 +540,7 @@ footer .ctt,
     border: none;
   }
 
-  header button {
+  header  {
     display: none;
   }
 
@@ -396,7 +574,9 @@ footer .ctt,
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     width: 100%;
+    padding: 50px 20px;
   }
   .history img {
     width: 100%;
@@ -418,8 +598,13 @@ footer .ctt,
   .cadastro input {
     width: 100%;
   }
+
+  #fotoPortfolio{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
   footer {
-    height: 500px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -434,5 +619,51 @@ footer .ctt,
   footer .pt2 {
     width: 100%;
     align-items: center;
+  }
+
+  footer h2{
+    margin-bottom: 4vw;
+  }
+  .cardapio{
+    padding: 80px 2px;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+  }
+
+  #caixinha button{
+    display: none;
+}  
+
+}
+
+@media screen and (max-width: 1290px) {
+
+  .history h1{
+    margin: 2px;
+    font-size: 0;
+  }
+  .history h1 span{
+    font-size: 24px;
+  }
+  /* .history button{
+    margin-bottom: 30px;
+  } */
+
+  #botoes{
+    flex-direction: row;
+  }
+
+  .especialidades {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .card-especialidade{
+    width: auto;
   }
 }
